@@ -1,0 +1,90 @@
+<html>
+<body></body>
+<head>
+    <h1>Laptop Price Prediction</h1>
+    <form action = "/predict" method = 'POST'>
+        <label>Laptop Brand:</label>
+        <select name = 'Company'>
+            <option>Dell</option><option>Lenovo</option>
+            <option>HP</option><option>Asus</option>
+            <option>MSI</option><option>Toshiba</option>
+            <option>Apple</option><option>Samsung</option>
+            <option>Razer</option><option>Mediacom</option>
+            <option>Microsoft</option><option>Xiaomi</option>
+            <option>Vero</option><option>Chuwi</option>
+            <option>Google</option><option>Fujitsu</option>
+            <option>LG</option><option>Huawei</option>
+            <option>Acer</option>
+        </select><br>
+        <label>Laptop Type:</label>
+        <select name = 'TypeName'>
+            <option>Notebook</option><option>Gaming</option>
+            <option>Ultrabook</option><option>2 in 1 Convertible</option>
+            <option>Workstation</option><option>Netbook</option>
+        </select><br>
+        <label>Ram:</label>
+        <select name = 'Ram'>
+            <option>2</option><option>4</option>
+            <option>6</option><option>8</option>
+            <option>12</option><option>16</option>
+            <option>24</option><option>32</option>
+            <option>64</option><option>128</option>
+        </select><br>
+        <label>Weight(kg):</label>
+        <input type = "text" name = "Weight"><br>
+        <label>Touchscreen:</label>
+        <select name = 'Touchscreen'>
+            <option>Yes</option><option>No</option>
+        </select><br>
+        <label>HD:</label>
+        <select name = 'HD'>
+            <option>Yes</option><option>No</option>
+        </select><br>
+        <label>IPS:</label>
+        <select name = 'IPS'>
+            <option>Yes</option><option>No</option>
+        </select><br>
+        <label>Cpu Brand:</label>
+        <select name = 'Cpu_Brand'>
+            <option>Intel Core i7</option><option>Intel Core i5</option>
+            <option>Intel Core i3</option><option>Other Intel Processor</option>
+            <option>AMD Processor</option>
+        </select><br>
+        <label>HDD:</label>
+        <select name = 'HDD'>
+            <option>0</option><option>128</option>
+            <option>256</option><option>512</option>
+            <option>1024</option><option>2048</option>
+        </select><br>
+        <label>SDD:</label>
+        <select name = 'SSD'>
+            <option>0</option><option>8</option>
+            <option>128</option><option>256</option>
+            <option>512</option><option>1024</option>
+        </select><br>
+        <label>Gpu Brand:</label>
+        <select name = 'Gpu_Brand'> 
+            <option>Intel</option><option>AMD</option>
+            <option>Nvidia</option>
+        </select><br>
+        <label>OS:</label>
+        <select name = 'Os'>
+            <option>Windows</option><option>Mac</option>
+            <option>Others/No OS/Linux</option>
+        </select><br>
+        <label>Resolution:</label>
+        <select name = 'Resolution'>
+            <option>1920*1080</option><option>1366*768</option>
+            <option>1600*900</option><option>3840*2160</option>
+            <option>3200*1800</option><option>2880*1800</option>
+            <option>2560*1600</option><option>2560*1440</option>
+            <option>2304*1440</option>        
+        </select><br>
+        <label>Screen Size (inches):</label>
+        <input type = 'text' name = "Screen_size"><br>
+        <input type = "submit" value = "PREDICT">{{pred}}
+
+    </form>
+    
+</head>
+</html>
